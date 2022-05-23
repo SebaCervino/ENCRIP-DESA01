@@ -1,0 +1,52 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="./imagenes/logo.png" alt="imagen de Alura">
+            <h1 class="titulo">ENCRIPTADOR / DESENCRIPTADOR DE MENSAJES</h1>
+        </header>
+        <main>
+            <section class="seccion1">
+                <textarea type="text" class="input-text" cols="30" rows="2" autofocus placeholder="Ingrese el texto aquí" >
+                </textarea>
+                <div class="warning" ><p>⚠ Solo letras minúsculas y sin acentos</p></div>
+                <div class="contenedor-btn">
+                    <button type="button" class="btn-codificar" onclick="btnCodificar()" >Encriptar</button> <!-- OnClick tiene la funcion encriptar-->
+                    <button type="button" class="btn-decodificar" onclick="btnDecodificar()" >Desencriptar</button><!-- OnClick tiene la funcion desencriptar-->
+                </div>
+            </section>
+ 
+            <section class="seccion2" >
+                <div class="contenedor-munieco">
+                    <img class="munieco" src="./imagenes/munieco.png" alt="Muñeco de Alura">
+                </div>
+
+                <div class="contenedor-h3">
+                    <h3>Ningún mensaje encontrado</h3>
+                </div>
+                <div class="contenedor-parrafo">
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+
+                <div class="text-mensaje-encriptado">
+                    <h2>Mensaje Encriptado</h2>
+                </div>
+                <div><textarea type="text" id="text-copy" class="input-text-area" cols="40" rows="30" ></textarea>
+                </div>
+                <div>
+                    <input type="button" class="btn-copiar" onclick="copyToClipBoard()" value="Copiar Mensaje">
+                </div>
+
+            </section>
+        </main>
+    <footer>
+        <p>&copy Designed by Sebastian Cervino for Alura Latam</p>
+    </footer>
+    <script src="./script.js" ></script>   
+    </body>
+</html>
